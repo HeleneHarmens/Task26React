@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './login.css';
+import './register.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Form } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
@@ -8,7 +8,7 @@ import { Button } from 'react-bootstrap';
 const API = 'https://myassapi.herokuapp.com/';
 const PART = 'user';
 
-class Login extends React.Component {
+class Register extends React.Component {
     
     constructor(props) {
         super(props);
@@ -34,8 +34,20 @@ class Login extends React.Component {
         return (
             <div className="Login">
                      
-                <h3>LOGIN</h3>
+                <h3>REGISTER</h3>
                 <Form>
+                    <Form.Group controlId="formBasicChecbox">
+                        <Form.Check type="checkbox" label="Owner" />
+                        <Form.Check type="checkbox" label="Reviewer" />
+                    </Form.Group>
+
+                    <Form.Group controlId="formBasicUsername">
+                        <Form.Label>Username</Form.Label>
+                        <Form.Control type="username" placeholder="Enter username" />
+                        <Form.Text className="text-muted">
+                        </Form.Text>
+                    </Form.Group>
+
                     <Form.Group controlId="formBasicEmail">
                         <Form.Label>Email address</Form.Label>
                         <Form.Control type="email" placeholder="Enter email" />
@@ -49,7 +61,7 @@ class Login extends React.Component {
                     </Form.Group>
                     
                     <Button variant="primary" type="submit">
-                        Log me in!
+                        Register me!
                     </Button>
                 </Form>
             </div>
@@ -57,4 +69,4 @@ class Login extends React.Component {
     }
 }
 
-export default Login;
+export default Register;
