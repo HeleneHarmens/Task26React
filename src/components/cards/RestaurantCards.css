@@ -6,7 +6,6 @@
     margin: 25px;
 }
 
-iframe {
-	max-width: 100%;
-	width: 100%;
+#btn-space{
+    margin: 10px;
 }

@@ -1,6 +1,9 @@
 import React from 'react';
 import './RestaurantCards.css';
-import {Router} from 'react-router-dom';
+import {Link} from 'react-router-dom';
+import RestaurantModal from './RestaurantModal';
+import RestaurantModalDesc from './RestaurantModalDesc';
+import StarRatings from 'react-star-ratings';
 
 const RestaurantCards = (restaurant) =>{ 
     return(
@@ -12,8 +15,8 @@ const RestaurantCards = (restaurant) =>{
                     <div className="gmap_canvas">
                         <iframe
                             title="map"
-                            width="270"
-                            height="270"
+                            width="100%"
+                            height="100%"
                             id="gmap_canvas"
                             src={"https://maps.google.com/maps?q=" + restaurant.address + "&t=&z=13&ie=UTF8&iwloc=&output=embed"}
                             frameBorder="0"
@@ -23,9 +26,11 @@ const RestaurantCards = (restaurant) =>{
                         </iframe>
                     </div>
                     </div>
-                    <Router to = {{pathname: '/restaurant/' + restaurant.id}} className="btn btn-primary">Check</Router>
+                    <RestaurantModal reviews={restaurant.allReviews} /> 
+                    <RestaurantModalDesc resDesc={restaurant.desc} resCategory={restaurant.category} />
+                    <StarRatings rating={5} starDimension="20px" starSpacing="3px"/>
                 </div>
-            </div>
+            </div> 
         </div>
     )
 };

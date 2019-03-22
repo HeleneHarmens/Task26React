@@ -1,38 +1,24 @@
-import React, { Component } from 'react';
-import './App.css';
-import Myheader from './components/header/header';
-import RestaurantCards from './components/cards/RestaurantCards';
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import "./App.css";
+import Myheader from "./components/header/header";
+import RestaurantPage from "./pages/Restaurant/RestaurantPage";
 class App extends Component {
-
-  state ={
-    restaurants: [],
-  };
-
-
-  componentDidMount() {
-    fetch("https://myassapi.herokuapp.com/restaurant")
-      .then(response => { return response.json() })
-      .then(findresponse => {
-        console.log(findresponse);
-        this.setState({
-          restaurants: findresponse
-        })
-      })
-      .catch(error => {
-        console.log(error);
-      })
-  }
-
+  
   render() {
-    
     return (
-
-      <div className="App">
-      <Myheader/>
-
-      </div>
+      
+        <div className="App">
+          <Myheader/>
+        <Router>
+          <Route path="/restaurant" component = {RestaurantPage}/>
+        </Router>
+        </div>
+      
     );
   }
 }
+
+
 
 export default App;
