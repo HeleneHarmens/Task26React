@@ -35,8 +35,7 @@ class TopRestaurants extends React.Component {
         
     
         const cards = this.state.topRestaurantsArr.map(rest => (
-            <p>{rest.name}</p>
-            
+          <p key={rest.restaurant_id}>{rest.name}</p>
         ));
     
     
