@@ -1,13 +1,9 @@
-.header {
-
+.Login {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: 'flex';
     align-items: center;
-    text-align: center;
-    width: auto;
+    width: fit-content ;
     border: 1px;
     border-style: solid;
     padding: 20px;
-    background-color: lightseagreen;
-
+    
 }
