@@ -35,6 +35,7 @@ class Login extends React.Component {
             <div className="Login">
                      
                 <h3>LOGIN</h3>
+                <p><i>(does not work yet)</i></p>
                 <Form>
                     <Form.Group controlId="formBasicEmail">
                         <Form.Label>Email address</Form.Label>
