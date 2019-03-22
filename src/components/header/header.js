@@ -1,11 +1,5 @@
 import React from 'react';
-
-const myStyle = {
-   display: 'flex',
-   justifyContent: 'center',
-   alignItems: 'center',
-   height: '200px',
-};
+import './header.css';
 
 const myHeader = (props) => {
    return (
