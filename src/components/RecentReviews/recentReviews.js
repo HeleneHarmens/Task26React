@@ -52,11 +52,12 @@ class RecentReviews extends React.Component {
         
     
         const recentReviewShow = this.state.recentReviewsArr.map(rest => (
-            <p><i>"{rest.review_text}"</i></p>
+            <p key={rest.review_id}><i>"{rest.review_text}"</i></p>
         ));
 
         const restaurantShow = this.state.restaurantArr.map(rest => (
-            <p><i>"{rest.restaurant_id}"</i> - {rest.name}</p>
+          <p key={rest.restaurant_id}><i>"{rest.restaurant_id}"</i> - {rest.name}
+          </p>
         ));
 
         

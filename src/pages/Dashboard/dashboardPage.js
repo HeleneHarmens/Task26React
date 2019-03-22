@@ -24,6 +24,7 @@ class DashboardPage extends Component {
             </div>
 
             </div>
+            
         </React.Fragment>
 
         );
