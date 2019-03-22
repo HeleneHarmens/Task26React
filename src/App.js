@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
 import Myheader from "./components/header/header";
 import RestaurantPage from "./pages/Restaurant/RestaurantPage";
+import Home from "./pages/Index/home";
 
 class App extends Component {
   
@@ -13,8 +14,6 @@ class App extends Component {
 
       <div className="App">
           <Home/>
-      
-        <div className="App">
           <Myheader/>
         <Router>
           <Route path="/restaurant" component = {RestaurantPage}/>
