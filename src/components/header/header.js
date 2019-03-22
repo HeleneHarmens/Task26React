@@ -1,10 +1,6 @@
 import React from 'react';
 import './header.css';
 
-const myStyle = {
-   
-};
-
 const myHeader = (props) => {
    return (
       <header className="header">
