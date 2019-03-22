@@ -1,0 +1,30 @@
+.Home {
+    align-items: center;
+}
+
+.RegisterLogin {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    text-align: left;
+}
+
+.SearchBox {
+    display: flex;
+    flex-flow: row nowrap;
+    text-align: left;
+    justify-content: center;
+}
+
+.InfoStuff {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.InfoStuff > div {
+    width: 100%;
+    text-align: center;
+}
