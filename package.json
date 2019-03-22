@@ -5,6 +5,8 @@
   "dependencies": {
     "axios": "^0.18.0",
     "bootstrap": "^4.3.1",
+    "react-star-ratings": "^2.3.0",
+    "reactstrap": "^7.1.0",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2",
     "react": "^16.8.4",
@@ -34,5 +36,13 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "bulma": "^0.7.4",
+    "parcel": "^1.12.2",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
+  }
 }
