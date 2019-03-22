@@ -35,9 +35,8 @@ class TopRestaurants extends React.Component {
         
     
         const cards = this.state.topRestaurantsArr.map(rest => (
-            <ul>
-            {rest.name}
-            </ul>
+            <p>{rest.name}</p>
+            
         ));
     
     
@@ -47,7 +46,7 @@ class TopRestaurants extends React.Component {
                 <div className='App-body'>
                     <br/>
                     <h4 className='restaurant'>Top Restaurants</h4>
-                    <div className="row">
+                    <div>
                         {cards}
                     </div>
                 </div>

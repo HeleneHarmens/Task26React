@@ -1,6 +1,8 @@
 .TopRestaurants {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: 1px;
     border-style: solid;
     padding: 20px;
-    width: fit-content ;
+    text-align: center;
+    align-items: center;
 }

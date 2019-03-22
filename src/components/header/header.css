@@ -1,0 +1,11 @@
+.header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: 'flex';
+    align-items: center;
+    text-align: center;
+    width: auto;
+    border: 1px;
+    border-style: solid;
+    padding: 20px;
+    background-color: lightseagreen;
+}

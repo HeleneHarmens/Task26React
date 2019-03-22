@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import Myheader from './components/header/header';
-import Register from './components/Register/register';
-import Login from './components/Login/login';
-import Search from './components/Search/search';
-import TopRestaurants from './components/TopRestaurants/topRestaurants';
-import RecentReviews from './components/RecentReviews/recentReviews';
+import Home from './pages/Index/home';
+
 
 class App extends Component {
   render() {
@@ -13,11 +10,8 @@ class App extends Component {
       <div className="App">
 
       <Myheader/>
-      <TopRestaurants/>
-      <RecentReviews/>
-      <Search/>
-      <Register/>
-      <Login/>
+      <Home/>
+
 
       </div>
     );

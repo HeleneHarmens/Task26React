@@ -49,7 +49,7 @@ class Login extends React.Component {
                     </Form.Group>
                     
                     <Button variant="primary" type="submit">
-                        Log me in!
+                        Login!
                     </Button>
                 </Form>
             </div>
